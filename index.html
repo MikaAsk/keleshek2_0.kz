@@ -3,27 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аналитика рынка труда</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
-        }
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <iframe title="Аналитика рынка труда" 
-            src="https://app.powerbi.com/view?r=eyJrIjoiYjJiZWQ3NTMtMjYzNC00MTNkLTgxNTAtYjFkZDU3MTFhMDk4IiwidCI6IjZlZWVhZjNlLTY3MTItNDhhNC05NzY3LTNmY2E1NGUxMTc1YyIsImMiOjl9" 
-            allowfullscreen>
-    </iframe>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <h1>Аналитика рынка труда для выпускников</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="analytics.html">Аналитика</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Выбери свою профессию осознанно</h2>
+                <p>Изучи актуальные данные рынка труда и сделай правильный выбор.</p>
+                <a href="analytics.html" class="btn">Изучить аналитику</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-card">
+                    <h3>Актуальные данные</h3>
+                    <p>Мы предоставляем самые свежие данные о рынке труда.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Простота использования</h3>
+                    <p>Интуитивно понятный интерфейс для всех пользователей.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Помощь в выборе</h3>
+                    <p>Рекомендации по выбору специальности на основе данных.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Аналитика рынка труда. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
