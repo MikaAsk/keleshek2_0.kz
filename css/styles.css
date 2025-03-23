@@ -5,6 +5,11 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -23,6 +28,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -30,6 +36,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -40,13 +47,14 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
-/* Основной контент */
+/* Герой-секция */
 .hero {
     background-color: #00BFFF;
     color: #fff;
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -57,35 +65,92 @@ nav ul li a {
 
 .hero p {
     font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #FF6F61;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
-.features {
+.btn:hover {
+    background-color: #FF4500;
+}
+
+/* О проекте */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.about-cards {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    gap: 20px;
 }
 
-.feature-card {
+.card {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
 }
 
-.feature-card h3 {
+.card h3 {
     margin-top: 0;
+    font-size: 1.5em;
+}
+
+/* Преимущества */
+.benefits {
+    background-color: #1A2A3A;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.benefit {
+    background-color: #00BFFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.benefit h3 {
+    margin-top: 0;
+    font-size: 1.5em;
 }
 
 /* Подвал */
@@ -95,17 +160,4 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-}
-
-/* Аналитика */
-.analytics {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.analytics iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-    margin-top: 20px;
 }
