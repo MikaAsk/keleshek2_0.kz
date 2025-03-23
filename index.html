@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аналитика рынка труда для выпускников</title>
+    <title>Аналитика рынка труда</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .analytics {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .analytics-header {
+            background-color: #1A2A3A;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .analytics-header h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .analytics-header p {
+            margin: 10px 0 0;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <div class="container">
-            <h1>Аналитика рынка труда для выпускников</h1>
+    <div class="analytics">
+        <div class="analytics-header">
+            <h2>Аналитика рынка труда</h2>
+            <p>Изучите актуальные данные, чтобы сделать осознанный выбор специальности.</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -19,67 +48,10 @@
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <!-- Герой-секция -->
-    <section class="hero">
-        <div class="container">
-            <h2>Выбери свою профессию осознанно</h2>
-            <p>Мы помогаем выпускникам школ принимать взвешенные решения на основе актуальных данных рынка труда. Узнай, какие специальности востребованы сегодня и какие навыки будут полезны в будущем.</p>
-            <a href="analytics.html" class="btn">Изучить аналитику</a>
-        </div>
-    </section>
-
-    <!-- О проекте -->
-    <section class="about">
-        <div class="container">
-            <h2>О проекте</h2>
-            <p>Наш проект создан для того, чтобы помочь выпускникам школ сделать осознанный выбор профессии. Мы анализируем рынок труда и предоставляем актуальную информацию о востребованных специальностях, уровнях зарплат и перспективах карьерного роста.</p>
-            <div class="about-cards">
-                <div class="card">
-                    <h3>Актуальные данные</h3>
-                    <p>Мы используем только свежие данные из надежных источников, чтобы вы могли доверять нашей аналитике.</p>
-                </div>
-                <div class="card">
-                    <h3>Простота использования</h3>
-                    <p>Наш сайт интуитивно понятен и удобен даже для тех, кто впервые сталкивается с аналитикой.</p>
-                </div>
-                <div class="card">
-                    <h3>Помощь в выборе</h3>
-                    <p>Мы не только предоставляем данные, но и даем рекомендации по выбору специальности.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Преимущества -->
-    <section class="benefits">
-        <div class="container">
-            <h2>Почему выбирают нас?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <h3>Достоверность</h3>
-                    <p>Все данные проверены и актуальны на текущий момент.</p>
-                </div>
-                <div class="benefit">
-                    <h3>Удобство</h3>
-                    <p>Простой и понятный интерфейс для всех пользователей.</p>
-                </div>
-                <div class="benefit">
-                    <h3>Поддержка</h3>
-                    <p>Мы всегда готовы ответить на ваши вопросы и помочь с выбором.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Подвал сайта -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Аналитика рынка труда. Все права защищены.</p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+        <iframe title="Аналитика рынка труда" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiYjJiZWQ3NTMtMjYzNC00MTNkLTgxNTAtYjFkZDU3MTFhMDk4IiwidCI6IjZlZWVhZjNlLTY3MTItNDhhNC05NzY3LTNmY2E1NGUxMTc1YyIsImMiOjl9" 
+                allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
